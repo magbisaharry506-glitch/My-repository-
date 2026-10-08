@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magbisa Harry Oyinperebi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+	/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #247b67;
+    font-size: 21px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #247b67;
+}
+
+
+/* Home Section */
+
+.hero {
+    background-color: #eaf6f1;
+    min-height: 500px;
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.welcome {
+    color: #247b67;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #1f3d35;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #247b67;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #1c6353;
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 70px 20px;
+    background-color: #ffffff;
+}
+
+.light-section {
+    background-color: #f5faf8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #247b67;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.section-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Cards */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    color: #247b67;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+
+/* Projects */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.project-card p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 18px;
+    color: #247b67;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Education */
+
+.education-card {
+    max-width: 650px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-left: 5px solid #247b67;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.education-card p {
+    margin-bottom: 8px;
+}
+
+
+/* Achievements */
+
+.achievement-list {
+    max-width: 750px;
+    margin: auto;
+}
+
+.achievement {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.achievement h3 {
+    color: #247b67;
+    margin-bottom: 5px;
+}
+
+
+/* Contact Form */
+
+/* Footer */
+
+footer {
+    background-color: #1f3d35;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 55px 18px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Magbisa Harry Oyinperebi</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">Welcome to my portfolio</p>
+
+            <h2>Hello, I'm Magbisa Harry Oyinperebi</h2>
+
+            <p>
+                I am a Computer Science student interested in computing,
+                technology, and learning how to build useful digital solutions.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+
+            <p class="section-text">
+                I am a young Nigerian student from Sagbama Local Government Area of Bayelsa State. He is currently pursuing a degree in Computer Science at Bayelsa Medical University, where I am developing my knowledge and preparing for my future.
+                n ambitious, hardworking, and determined individual with a strong vision for my future. my greatest aspiration is to become a successful politician and a leader who makes a meaningful difference in the lives of others.
+                My vision for leadership is centered on development, service, and helping the people. I hopes to contribute to the growth of my community, create positive opportunities for others, and serve with dedication and responsibility. As a student, I am focused on building myself today while working toward the greater goals I have for tomorrow.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section light-section">
+        <div class="container">
+            <h2>Skills</h2>
+
+            <div class="card-grid skills-grid">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Basic knowledge of HTML.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Basic knowledge of styling and designing responsive web pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Computer Fundamentals</h3>
+                    <p>Understanding of basic computer concepts and applications.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Problem Solving</h3>
+                    <p>Ability to approach simple problems and find practical solutions.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Basic Programming</h3>
+                    <p>Basic understanding of programming concepts and logic.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Project</h2>
+
+            <div class="card-grid project-grid">
+
+                <div class="card project-card">
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A simple website created to introduce myself, show my
+                        skills and present my academic work.
+                        Also this is my first Project 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="section light-section">
+        <div class="container">
+            <h2>Education</h2>
+
+            <div class="education-card">
+                <p><strong>Institution:</strong> Bayelsa Medical University</p>
+                <p><strong>Programme:</strong> Computer Science</p>
+                <p><strong>Level:</strong> 300L</p>
+                <p><strong>Matric Number:</strong> UG/24/0889</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Achievements / Certifications</h2>
+
+            <div class="achievement-list">
+
+                <div class="achievement">
+                    <h3>Academic Achievement</h3>
+                    <p>
+                        • Currently pursuing a Bachelor's degree in Computer Science.
+                        • Successfully completed academic coursework and practical training in computer science and information technology. 
+                        • Developed knowledge and skills in programming,
+                        • Demonstrated problem-solving abilities, teamwork, critical thinking, and a commitment to continuous learning.
+                        • Gained experience using various computer applications, programming tools, and modern technologies.
+                        • Preparing for Industrial Training (IT) to gain hands-on experience in a professional technology, software development, or IT environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section light-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <form class="contact-form">
+              <p> Email Address: <li>Magbisaharry506@gmail.com</li></p>
+                 <p> Github link: <li>https://github.com/magbisaharry506-glitch</li></p>
+                 <p> Tell: <li>09113390413</li></p>
+                
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Magbisa Harry Oyinperebi. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
